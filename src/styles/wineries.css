@@ -54,12 +54,12 @@ h3 {
   padding: 0;
   color: white;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: lighter;
   line-height: 1;
   opacity: 1;
   transform: scale(1);
   transition: 0.25s ease;
-  z-index: 999;
+  z-index: 99;
 }
 img {
   height: 100%;
@@ -83,11 +83,17 @@ img {
   margin: 0 0 20px;
   padding: 0;
 }
-p {
-  font-size: 14px;
+.card-info p {
+  font-size: 16px;
   line-height: 1.75;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
-button {
+.card-info p:nth-child(2) {
+  text-decoration: underline;
+}
+
+ button {
   position: relative;
   display: flex;
   align-items: center;
@@ -97,9 +103,11 @@ button {
   background-color: #80013f;
   border: none;
   border-radius: 5px;
+  width: 150px;
 }
-button a {
+.card-info button a {
   color: white;
   font-size: 14px;
   cursor: pointer;
+  text-decoration: none;
 }

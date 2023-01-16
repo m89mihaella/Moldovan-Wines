@@ -19,7 +19,7 @@ const Wineries = () => {
       image: "https://www.winetourism.com/files/2020/09/et-cetera-tour-1500x500.webp",
       alt: "Et Cetera",
       address: "Moldova, Chisinau",
-      webSite: "https://carlevana.md",
+      webSite: "https://etcetera.md/",
     },
     {
       name: "Château Purcari",
@@ -56,7 +56,8 @@ const Wineries = () => {
     {
       name: "Cricova Winery",
       description: "The biggest cellars in the whole world are here, where, underground lies a real city of wine.",
-      image: "https://moldova.md/sites/default/files/cricova.jpg",
+      image:
+        "https://images.unsplash.com/photo-1593535388526-a6b8556c5351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
       alt: "Cricova Winery",
       address: "Moldova, Cricova",
       webSite: "https://cricova.md",
@@ -75,8 +76,10 @@ const Wineries = () => {
       <Navbar styleClass={"nav-wineries"} />
       <h1 className="h1-wineries">Browse through the best selection of outstanding wineries in Moldova</h1>
       <div className="wrap-container">
-        {wineries.map(({ name, description, image, alt, address, webSite }) => {
-          return <Cards nameProp={name} descriptionProp={description} imageProp={image} altProp={alt} addressProp={address} webSiteProp={webSite} />;
+        {wineries.map(({ name, description, image, alt, address, webSite }, index) => {
+          return (
+            <Cards key={index} nameProp={name} descriptionProp={description} imageProp={image} altProp={alt} addressProp={address} webSiteProp={webSite} />
+          );
         })}
       </div>
     </>

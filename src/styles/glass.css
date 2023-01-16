@@ -1,12 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 main {
-  height: 650px;
+  height: 750px;
   width: 350px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 .roundGlass {
   width: 97%;
@@ -79,8 +77,14 @@ main {
   height: 50px;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 button {
-  width: 50%;
-  height: 50%;
+ 
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+
 }

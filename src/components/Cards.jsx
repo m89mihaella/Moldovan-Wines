@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/wineries.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Cards = (props) => {
   return (
@@ -11,7 +10,7 @@ const Cards = (props) => {
         <div className="card-info">
           <p>{props.descriptionProp}</p>
           <p>{props.addressProp}</p>
-          <FontAwesomeIcon icon="fa-light fa-location-pin" />
+
           <button>
             <a href={props.webSiteProp} target="_blank" rel="noreferrer">
               Find out more

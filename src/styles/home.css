@@ -32,6 +32,9 @@ video {
 }
 .video-description p {
   font-size: 2em;
+  font-weight: 600;
+  font-family:"Source Serif Pro", serif;
+;
 }
 nav {
   font-size: 25px;

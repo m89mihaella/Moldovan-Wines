@@ -1,7 +1,6 @@
-import React from 'react'
-import Navbar from './Navbar';
-import WineCards from './WineCards';
-
+import React from "react";
+import Navbar from "./Navbar";
+import WineCards from "./WineCards";
 
 const Wines = () => {
   const wines = [
@@ -50,13 +49,12 @@ const Wines = () => {
     <>
       <Navbar styleClass={"nav-wines"} />
       <div className="flex-container">
-        {wines.map(({ name, webSite }) => {
-          return <WineCards wineNameProp={name} siteProp={webSite} />;
+        {wines.map(({ name, webSite }, index) => {
+          return <WineCards key={index} wineNameProp={name} siteProp={webSite} />;
         })}
       </div>
     </>
   );
 };
 
-
-export default Wines
+export default Wines;
