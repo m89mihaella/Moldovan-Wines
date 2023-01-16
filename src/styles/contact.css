@@ -1,0 +1,62 @@
+.contact {
+  width: 100%;
+  display: flex;
+  background-image: url(/img/beautiful_wine3.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 250px 0;
+}
+.contact_form {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 2.5rem;
+}
+textarea {
+  height: 8rem;
+}
+input,
+textarea {
+  display: block;
+  margin: 1rem;
+  width: 18rem;
+  border: 1px solid #80013f;
+  border-radius: 4px;
+}
+.submit {
+  background-color: #80013f;
+  color: antiquewhite;
+  width: 100px;
+  height: 40px;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  opacity: 0.7;
+  margin-left: 8rem;
+}
+.submit:hover {
+  opacity: 1;
+  border: 1px solid black;
+}
+.talk {
+  width: 50%;
+}
+
+.talk h1 {
+  margin: 5rem 0;
+}
+
+.talk p {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+::placeholder {
+  padding-left: 0.5rem;
+  color: rgb(167, 129, 137);
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Sansita+Swashed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-wines {
+  font-size: 25px;
+  margin: 40px 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "Lobster", cursive;
+  color: #80013f;
+  position: fixed;
+}
+.nav-wines div {
+  text-align: center;
+  width: 20%;
+}
+.nav-wines div ul {
+  list-style-type: none;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.flex-container {
+  padding-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1200px;
+}
+.flex {
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px;
+  color: black;
+  width: 400px;
+  height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30px;
+  margin: 70px;
+}
+.flex:hover {
+  border: 1px solid rosybrown;
+  border-radius: 5px;
+}
+.flex:nth-of-type(1) {
+  background-image: url(/img/purcari_cuvee.jpg);
+}
+
+.flex:nth-of-type(2) {
+  background-image: url(/img/cricova_cuvee.jpg);
+}
+.flex:nth-of-type(3) {
+  background-image: url(/img/viorica_purcari.jpg);
+}
+
+.flex:nth-of-type(4) {
+  background-image: url(/img/vartely_feteasca.jpg);
+}
+.flex:nth-of-type(5) {
+  background-image: url(/img/novak.jpg);
+}
+.flex:nth-of-type(6) {
+  background-image: url(/img/vinaria_feteasca.jpg);
+}
+.flex:nth-of-type(7) {
+  background-image: url(/img/fautor_cuvee.jpg);
+}
+.flex:nth-of-type(8) {
+  background-image: url(/img/asconi.jpg);
+}
+.flex:nth-of-type(9) {
+  background-image: url(/img/EMpirico.jpg);
+}
+.flex:nth-of-type(10) {
+  background-image: url(/img/Davidescu.jpg);
+}
+
+.flex p {
+  text-align: center;
+  font-family: Lobster, cursive;
+  color: #80013f;
+}

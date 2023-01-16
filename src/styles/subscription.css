@@ -1,0 +1,39 @@
+.subscription{
+    width: 70%;
+    height: 30vh;
+    background-color: rosybrown;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.subscription h2{
+    font-size: 35px;
+        font-family:  "Source Serif Pro", serif;
+
+}
+.subscription p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+    font-family: Lobster, cursive;
+}
+.subscription form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscription button{
+    color: white;
+    width: 150px;
+    font-size: 15px;
+    font-family:  "Source Serif Pro", serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+}
+.subscription input:focus{
+outline: none;}
