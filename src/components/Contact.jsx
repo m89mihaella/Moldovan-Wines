@@ -10,6 +10,8 @@ function Contact() {
     message: "",
   });
 
+  const [message, setMessage] = useState(false);
+
   const handleChange = (event) => {
     setFormData({
       ...formData,
@@ -19,6 +21,7 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setMessage(true);
     console.log(formData);
   };
 
@@ -32,17 +35,21 @@ function Contact() {
             <p>Wine is the answer, but I can't even remember the question.</p>
           </div>
           <div className="contact_form">
-            <form onSubmit={handleSubmit}>
-              <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
+            {message ? (
+              <p>Thank you for your message!</p>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
 
-              <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+                <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
 
-              <textarea name="message" placeholder="Your message" value={formData.message} onChange={handleChange} />
+                <textarea name="message" placeholder="Your message" value={formData.message} onChange={handleChange} />
 
-              <button className="submit" type="submit">
-                Send
-              </button>
-            </form>
+                <button className="submit" type="submit">
+                  Send
+                </button>
+              </form>
+            )}
           </div>
         </div>
         <Subscription />

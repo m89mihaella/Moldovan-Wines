@@ -1,17 +1,17 @@
 import React from "react";
 import "../styles/history.css";
 
-const HistoryContent = (props) => {
+const HistoryContent = ({ h2, p1, p2, p3, image }) => {
   return (
     <div>
-      <h2>{props.h2Prop}</h2>
+      <h2>{h2}</h2>
 
-      <p>{props.p1Prop}</p>
+      <p>{p1}</p>
 
-      <img src={props.imageProp} alt="" />
-      <p>{props.p2Prop}</p>
+      <img src={image} alt="" />
+      <p>{p2}</p>
 
-      <p>{props.p3Prop}</p>
+      <p>{p3}</p>
     </div>
   );
 };

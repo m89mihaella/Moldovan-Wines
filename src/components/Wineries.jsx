@@ -71,15 +71,14 @@ const Wineries = () => {
       webSite: "https://vartely.md",
     },
   ];
+  
   return (
     <>
       <Navbar styleClass={"nav-wineries"} />
       <h1 className="h1-wineries">Browse through the best selection of outstanding wineries in Moldova</h1>
       <div className="wrap-container">
-        {wineries.map(({ name, description, image, alt, address, webSite }, index) => {
-          return (
-            <Cards key={index} nameProp={name} descriptionProp={description} imageProp={image} altProp={alt} addressProp={address} webSiteProp={webSite} />
-          );
+        {wineries.map((winery, index) => {
+          return <Cards key={index} {...winery} />;
         })}
       </div>
     </>

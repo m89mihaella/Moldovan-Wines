@@ -20,11 +20,12 @@ hr {
   text-align: center;
   letter-spacing: 3px;
   font-weight: lighter;
-  font-size: 40px;
+  font-size: 50px;
 }
 .history h2 {
   text-align: center;
   padding: 30px;
+  font-size: 30px;
 }
 
 .history div{
@@ -41,7 +42,7 @@ hr {
 }
 .history p{
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px;
 }
 .different {
@@ -50,7 +51,7 @@ hr {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 10px;
-  height: 90px;
+  height: 100px;
 }
 .different:hover {
   opacity: 0.6;

@@ -7,8 +7,8 @@ const Subscription = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send email to server for subscription
     setSubscribed(true);
+    console.log('New Subscriber:',email);
   };
   return (
     <div className="subscription">
@@ -30,4 +30,4 @@ const Subscription = () => {
 
 export default Subscription;
 
-//This component uses React hooks useState to keep track of the email and subscription state. The component renders a form for the user to enter their email and subscribe, and when the form is submitted, it sends the email to the server (in a real-world scenario) and the state is updated to show that the user is subscribed.
+

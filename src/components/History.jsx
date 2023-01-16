@@ -41,19 +41,10 @@ const History = () => {
       <div className="history">
         <h1>History</h1>
         <hr />
-        {contentText.map(({ h2, p1, p2, p3, image }, index) => {
-          return <HistoryContent key={ index} h2Prop={h2} p1Prop={p1} p2Prop={p2} p3Prop={p3} imageProp={image} />;
+        {contentText.map((content, index) => {
+          return <HistoryContent key={ index} {...content} />;
         })}
         <hr />
-        <iframe
-          width="1000px"
-          height="700px"
-          src="https://www.youtube.com/embed/54liVNwwpS0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </div>
     </>
   );

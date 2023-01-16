@@ -1,18 +1,17 @@
 import React from 'react'
 
-const WineCards = (props) => {
+const WineCards = ({ name, webSite }) => {
   return (
     <>
-
       <div className="flex">
         <p>
-          <a href={props.siteProp} target="_blank" rel="noreferrer">
-            {props.wineNameProp}
+          <a href={webSite} target="_blank" rel="noreferrer">
+            {name}
           </a>
         </p>
       </div>
     </>
   );
-}
+};
 
 export default WineCards

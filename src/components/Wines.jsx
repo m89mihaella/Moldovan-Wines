@@ -49,8 +49,8 @@ const Wines = () => {
     <>
       <Navbar styleClass={"nav-wines"} />
       <div className="flex-container">
-        {wines.map(({ name, webSite }, index) => {
-          return <WineCards key={index} wineNameProp={name} siteProp={webSite} />;
+        {wines.map((wine, index) => {
+          return <WineCards key={index} {...wine} />;
         })}
       </div>
     </>

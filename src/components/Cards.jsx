@@ -1,18 +1,19 @@
 import React from "react";
 import "../styles/wineries.css";
 
-const Cards = (props) => {
+const Cards = ({ name, image, description, alt, address, webSite }) => {
+  //const { name, image, description, alt, address, webSite } = props;
   return (
     <>
       <div className="cards">
-        <h3>{props.nameProp}</h3>
-        <img src={props.imageProp} alt={props.altProp} />
+        <h3>{name}</h3>
+        <img src={image} alt={alt} />
         <div className="card-info">
-          <p>{props.descriptionProp}</p>
-          <p>{props.addressProp}</p>
+          <p>{description}</p>
+          <p>{address}</p>
 
           <button>
-            <a href={props.webSiteProp} target="_blank" rel="noreferrer">
+            <a href={webSite} target="_blank" rel="noreferrer">
               Find out more
             </a>
           </button>
