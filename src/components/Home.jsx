@@ -1,5 +1,5 @@
 import React from "react";
-import VideoHistory from "./VideoHistory";
+import Video from "./Video";
 import Subscription from "./Subscription";
 import "../styles/home.css";
 import Navbar from "./Navbar";
@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="video-container">
-        <VideoHistory />
+        <Video />
         <div className="video-description">
           <h1>The Beauty of Moldova</h1>
           <p>Autumn, harvest season and wines</p>

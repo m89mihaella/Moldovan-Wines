@@ -28,13 +28,11 @@ video {
   letter-spacing: 2px;
   font-weight: lighter;
   padding-bottom: 2rem;
-
 }
 .video-description p {
   font-size: 2em;
   font-weight: 600;
-  font-family:"Source Serif Pro", serif;
-;
+  font-family: "Source Serif Pro", serif;
 }
 nav {
   font-size: 25px;
@@ -65,4 +63,42 @@ nav div ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .video-container{
+    height: 50%;
+  }
+  
+  video {
+    object-fit: scale-down;
+    height: 50%;
+  }
+
+  .video-description{
+    height: 50%;
+  }
+
+  .video-description h1 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .video-description p {
+    font-size: 0.9em;
+  }
+
+  nav {
+  font-size: 1rem;
+  margin: 20px 0;
+
+
+  color: #80013f;
+  
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 800px) {
 }

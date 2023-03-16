@@ -14,7 +14,6 @@ hr {
   opacity: 0.4;
 }
 
-
 .history h1 {
   margin-top: 150px;
   text-align: center;
@@ -28,22 +27,22 @@ hr {
   font-size: 30px;
 }
 
-.history div{
+.history div {
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.history img{
+.history img {
   width: 1200px;
   height: 750px;
 }
-.history p{
+.history p {
   font-weight: 600;
   font-size: 18px;
   padding: 20px;
+  text-align: justify;
 }
 .different {
   position: fixed;
@@ -55,4 +54,83 @@ hr {
 }
 .different:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .history h1 {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .history h2 {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .history img {
+    width: 400px;
+    height: 220px;
+    padding: 12px;
+  }
+  .history p {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .history h1 {
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
+  .history h2 {
+    font-size: 1.4rem;
+    padding: 12px;
+  }
+
+  .history img {
+    width: 500px;
+    height: 300px;
+  }
+  .history p {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 800px) {
+
+  .history h1 {
+    font-size: 2.2rem;
+  }
+  .history h2 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .history img {
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+  }
+  .history p {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    .history img {
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .history img {
+    width: 1000px;
+    height: 650px;
+    padding: 20px;
+  }
 }
