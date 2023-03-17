@@ -8,7 +8,7 @@ const Subscription = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubscribed(true);
-    console.log('New Subscriber:',email);
+    console.log("New Subscriber:", email);
   };
   return (
     <div className="subscription">
@@ -18,9 +18,7 @@ const Subscription = () => {
         <p>Thank you for subscribing!</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <label>
-            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <button type="submit">Subscribe</button>
         </form>
       )}
@@ -29,5 +27,3 @@ const Subscription = () => {
 };
 
 export default Subscription;
-
-
