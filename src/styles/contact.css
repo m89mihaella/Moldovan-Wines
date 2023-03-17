@@ -1,4 +1,4 @@
-.contact-wrapper{
+.contact-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +6,7 @@
 .contact {
   width: 100%;
   display: flex;
+  align-items: center;
 
   background-image: url(/img/beautiful_wine3.avif);
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@ textarea {
 }
 .submit {
   background-color: #80013f;
-  color: antiquewhite;
+  color: white;
   width: 100px;
   height: 40px;
   font-family: "Lobster", cursive;
@@ -70,3 +71,105 @@ textarea {
   font-family: "Lobster", cursive;
   font-size: 18px;
 }
+
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    padding: 90px 0;
+  }
+  .contact_form {
+    height: 500px;
+  }
+  .talk {
+    display: flex;
+    flex-direction: column;
+  }
+  .talk h1,
+  .talk p {
+    font-size: 20px;
+  }
+  input,
+  textarea {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.6;
+    border: 1px solid rosybrown;
+  }
+  ::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #80013f;
+  }
+  .submit {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 100px 0;
+  }
+  .contact_form {
+    height: 500px;
+  }
+  .talk {
+    display: flex;
+    flex-direction: column;
+  }
+  .talk h1,
+  .talk p {
+    font-size: 25px;
+  }
+  input,
+  textarea {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+    border: 1px solid rosybrown;
+  }
+  ::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #80013f;
+  }
+  .submit {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .contact {
+    flex-direction: column;
+    padding: 100px 0;
+  }
+  .contact_form {
+    height: 550px;
+  }
+  .talk {
+    display: flex;
+    flex-direction: column;
+  }
+  .talk h1,
+  .talk p {
+    font-size: 30px;
+  }
+  input,
+  textarea {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+    border: 1px solid rosybrown;
+  }
+  ::placeholder {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #80013f;
+  }
+  .submit {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+

@@ -66,10 +66,12 @@ img {
   height: 100%;
   transition: 0.25s;
   background-size: contain;
+  filter:brightness(75%);
+  
 }
 .card-info {
   position: absolute;
-  bottom: -34%;
+  bottom: -43%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -89,13 +91,12 @@ img {
   line-height: 1.75;
   font-weight: bold;
   letter-spacing: 0.5px;
-  
 }
 .card-info p:nth-child(2) {
   text-decoration: underline;
 }
 
- button {
+button {
   position: relative;
   display: flex;
   align-items: center;
@@ -112,4 +113,23 @@ img {
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .h1-wineries {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .h1-wineries {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 800px) {
 }
