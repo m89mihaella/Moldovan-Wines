@@ -1,10 +1,10 @@
 
 
 main {
-  height: 750px;
+  height: 950px;
   width: 350px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 170px;
 }
 .roundGlass {
   width: 97%;
@@ -88,3 +88,5 @@ button {
   font-weight: 600;
 
 }
+
+

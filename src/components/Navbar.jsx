@@ -30,7 +30,7 @@ const Navbar = ({ styleClass }) => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/fill-me-up">Fill Me Up</Link>
+              <Link to="/fill-me-up">Fill-Me</Link>
             </li>
           </ul>
         </div>
