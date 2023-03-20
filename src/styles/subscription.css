@@ -33,6 +33,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   cursor: pointer;
+  margin: 0;
 }
 .subscription input:focus {
   outline: none;
@@ -41,16 +42,25 @@
 
 @media screen and (max-width: 600px) {
 .subscription {
-  height: 19vh;
-  width: 80vw;
+  height: 18vh;
+  width: 95%;
   
+}
+
+.subscription form {
+  flex-direction: row;
 }
 
 .subscription h2  {
   font-size: 16px;
+  padding: 10px;
 }
 .subscription p , .subscription ::placeholder{
   font-size: 12px;
+    padding: 10px;
+    text-align: justify;
+    letter-spacing: 0;
+
 }
 .subscription input{
   height: 32px;
@@ -64,9 +74,105 @@
 }
 }
 @media screen and (min-width: 601px) and (max-width: 768px) {
-   
+   .subscription {
+  height: 18vh;
+  width: 90%;
+  
+}
+
+.subscription form {
+  flex-direction: row;
+}
+
+.subscription h2  {
+  font-size: 18px;
+  padding: 10px;
+}
+.subscription p , .subscription ::placeholder{
+  font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+
+}
+.subscription input{
+  height: 32px;
+  width: 200px;
+}
+.subscription button {
+  color: white;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+}
 
 }
 @media screen and (min-width: 769px) and (max-width: 800px){
+.subscription {
+  height: 18vh;
+  width: 80%;
+  
+}
 
+.subscription form {
+  flex-direction: row;
+}
+
+.subscription h2  {
+  font-size: 20px;
+  padding: 10px;
+}
+.subscription p , .subscription ::placeholder{
+  font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+
+}
+.subscription input{
+  height: 32px;
+  width: 200px;
+}
+.subscription button {
+  color: white;
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+}
+}
+
+@media screen and (min-width:801px) and (max-width:1024px){
+  .subscription {
+  height: 20vh;
+  width: 75%;
+  
+}
+
+.subscription form {
+  flex-direction: row;
+}
+
+.subscription h2  {
+  font-size: 24px;
+  padding: 10px;
+}
+.subscription p , .subscription ::placeholder{
+  font-size: 16px;
+    padding: 10px;
+
+}
+.subscription input{
+  height: 36px;
+  width: 200px;
+}
+.subscription button {
+  color: white;
+  width: 80px;
+  height: 33px;
+  font-size: 13px;
+}
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px){
+  .subscription h2, .subscription p, .subscription form{
+    padding: 14px;
+  }
 }
