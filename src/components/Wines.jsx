@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import SecondNavbar from "./SecondNavbar.jsx";
 import WineCards from "./WineCards";
 
 const Wines = () => {
@@ -47,7 +47,7 @@ const Wines = () => {
   ];
   return (
     <>
-      <Navbar styleClass={"nav-wines"} />
+      <SecondNavbar styleClass={"nav-wines"} />
       <div className="flex-container">
         {wines.map((wine, index) => {
           return <WineCards key={index} {...wine} />;

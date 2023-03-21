@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
-import Navbar from "./Navbar";
+import SecondNavbar from "./SecondNavbar";
 import Subscription from "./Subscription";
 
 function Contact() {
@@ -27,7 +27,7 @@ function Contact() {
 
   return (
     <>
-      <Navbar styleClass={"nav-wineries"} />
+      <SecondNavbar styleClass={"nav-wines nav-wineries"} />
       <div className="contact-wrapper">
         <div className="contact">
           <div className="talk">

@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-//import hamburger from "../assets/icons8-hamburger-menu-24.png";
-//import logo from "../assets/3.png";
+
 
 const Navbar = ({ styleClass }) => {
 

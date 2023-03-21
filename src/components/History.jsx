@@ -36,7 +36,7 @@ const History = () => {
   ];
   return (
     <>
-      <Navbar styleClass={"different"} />
+      <Navbar styleClass={"navbar different"} />
 
       <div className="history">
         <h1>History</h1>

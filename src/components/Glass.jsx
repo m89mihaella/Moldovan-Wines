@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/glass.css";
-import Navbar from "./Navbar";
+import SecondNavbar from "./SecondNavbar";
 
 const Glass = () => {
   const [wineLevel, setWineLevel] = useState(0);
@@ -8,7 +8,7 @@ const Glass = () => {
 
   return (
     <>
-      <Navbar styleClass={"nav-wineries"} />
+      <SecondNavbar styleClass={"nav-wines nav-wineries"} />
       <main>
         <div className="squarePart">
           <div className="roundGlass">

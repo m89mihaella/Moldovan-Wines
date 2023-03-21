@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards";
 import "../styles/wineries.css";
-import Navbar from "./Navbar";
+import SecondNavbar from "./SecondNavbar";
 
 const Wineries = () => {
   const wineries = [
@@ -74,7 +74,7 @@ const Wineries = () => {
   
   return (
     <>
-      <Navbar styleClass={"nav-wineries"} />
+      <SecondNavbar styleClass={"nav-wines nav-wineries"} />
       <h1 className="h1-wineries">Browse through the best selection of outstanding wineries in Moldova</h1>
       <div className="wrap-container">
         {wineries.map((winery, index) => {

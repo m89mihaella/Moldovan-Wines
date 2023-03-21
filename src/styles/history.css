@@ -41,14 +41,14 @@ hr {
 .history p {
   font-weight: 600;
   font-size: 18px;
-  padding: 20px;
+  padding: 40px 122px;
   text-align: justify;
 }
 .different {
   position: fixed;
   background-color: rosybrown;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
   height: 100px;
 }
@@ -125,6 +125,11 @@ hr {
     height: 500px;
     padding: 20px;
   }
+
+  .history p {
+    font-size: 1.1rem;
+    padding: 25px 0;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -132,5 +137,10 @@ hr {
     width: 1000px;
     height: 650px;
     padding: 20px;
+  }
+
+   .history p {
+    font-size: 1.1rem;
+    padding: 25px;
   }
 }
