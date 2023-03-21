@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Navbar styleClass={"navbar"}/>
       <div className="video-container">
         <Video />
         <div className="video-description">
